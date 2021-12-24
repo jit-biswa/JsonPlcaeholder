@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JsonPlaceholder</title>
+  </head>
+  <body>
+    <h1>JSONPLACEHOLDER</h1>
+<button (click)="getDataFromAPI()">Get Data</button>
+
+<ul *ngFor = "let d for data">
+  <li>{{d.id}}</li>
+  <li>{{d.title}}</li>
+  <li>{{d.body}}</li>
+</ul>
+  </body>
+</html>
